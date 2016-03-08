@@ -2,11 +2,101 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона- Главная</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <nav class="main-nav"> <!--Светлый блок, в котором содеожится логотип и гамбургер-->
+        <div class="main-nav__wrapper main-nav__wrapper--closed"> <!--Синий блок с выпадающим меню-->
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="#">Html Academy</a></li>
+          </ul>
+          <span class="main-nav__toggle main-nav__toggle--closed">Меню</span>
+        </div>
+      </nav>
+      <div class="page-header__logo">
+        <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип"></a>
+      </div>
+    </header>
+
+
+    <div class="intro">
+      <h1 class="intro__heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </div>
+
+    <div class="reasons">
+      <div class="reasons__item  reasons__item--with-image">
+        <h2 class="reasons__item-title">Настоящий городок</h2>
+        <p class="reasons__item-descr">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="reasons__item-image">
+          <img src="http://placehold.it/320x260" width="320" height="260" alt="Настоящий городок">
+        </div>
+        <div class="features">
+          <div class="features__item">
+            <h3 class="features__item-title">Жилье</h3>
+            <p class="features__item-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="features__item">
+            <h3 class="features__item-title">Сувениры</h3>
+            <p class="features__item-descr">Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="features__item">
+            <h3 class="features__item-title">Еда</h3>
+            <p class="features__item-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+        </div>
+      </div>
+      <div class="reasons__item  reasons__item--with-image">
+        <h2 class="reasons__item-title">Там есть мост дьявола</h2>
+        <p class="reasons__item-descr">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+        <div class="reasons__item-image">
+          <img src="http://placehold.it/320x260" width="320" height="260" alt="Мост дьявола">
+        </div>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__item-title">Небольшая площадь</h2>
+        <p class="reasons__item-descr">Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__item-title">Красивая дорога</h2>
+        <p class="reasons__item-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__item-title">Мало туристов</h2>
+        <p class="reasons__item-descr">Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
+    </div>
+
+    <div class="hotel-search">
+      <h3 class="hotel-search__slogan">Заинтересовались?</h3>
+      <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения в Седоне</p>
+      <a class="btn btn--start-search" href="#">Найти гостиницу</a>
+    </div>
+
+    <div class="map">
+      Карта
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__out-link">
+        <a href="http://visitsedona.com/" target="_blank">#visitsedona</a>
+      </div>
+      <div class="page-footer__social">
+        <div class="social-links">
+          <a class="social-link social-link--tw" href="https://twitter.com/SedonaAZ">Twitter</a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/VisitSedona">Facebook</a>
+          <a class="social-link social-link--yt" href="https://www.youtube.com/user/SedonaAZ1">YouTube</a>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано
+      </div>
+    </footer>
 
   </body>
 </html>
