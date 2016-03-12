@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона - Фото и видео</title>
+    <title>HTML Academy: Седона - Форма отзыва</title>
   </head>
   <body>
 
@@ -18,15 +18,16 @@
           <span class="main-nav__toggle main-nav__toggle--closed">Меню</span>
         </div>
       </nav>
+
       <div class="page-header__logo">
         <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип"></a>
       </div>
     </header>
 
-    <div class="inner-intro">
+    <section class="inner-intro">
       <h1 class="inner-intro__heading">Оставьте свой отзыв</h1>
       <p class="inner-intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </div>
+    </section>
 
     <div class="review-form">
       <form action="" method="post">
@@ -62,16 +63,16 @@
         <fieldset class="impression">
           <legend class="impression__heading">Ваше общее впечатление:</legend>
           <ul class="impression__list">
-            <li>
-              <input class="impression__field" id="good" type="radio" name="impression" checked>
+            <li class="impression__item">
+              <input class="impression__radio" id="good" type="radio" name="impression" checked>
               <label class="impression__label" for="good">Скорее положительное</label>
             </li>
-            <li>
-              <input class="impression__field" id="bad" type="radio" name="impression">
+            <li class="impression__item">
+              <input class="impression__radio" id="bad" type="radio" name="impression">
               <label class="impression__label" for="bad">Скорее отрицательное</label>
             </li>
-            <li>
-              <input class="impression__field" id="complicate" type="radio" name="impression">
+            <li class="impression__item">
+              <input class="impression__radio" id="complicate" type="radio" name="impression">
               <label class="impression__label" for="complicate">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -81,19 +82,19 @@
           <legend class="attractions__heading">Посещенные достопримечательности:</legend>
           <ul class="attractions__list">
             <li class="attractions__item">
-              <input class="attractions__field" id="bridge" type="checkbox" name="bridge" checked>
+              <input class="attractions__checkbox" id="bridge" type="checkbox" name="bridge" checked>
               <label class="attractions__label" for="bridge">Мост Дьявола</label>
             </li>
             <li class="attractions__item">
-              <input class="attractions__field" id="park" type="checkbox" name="park" checked>
+              <input class="attractions__checkbox" id="park" type="checkbox" name="park" checked>
               <label class="attractions__label" for="park">Сайд-парк</label>
             </li>
             <li class="attractions__item">
-              <input class="attractions__field" id="mountain" type="checkbox" name="mountain">
+              <input class="attractions__checkbox" id="mountain" type="checkbox" name="mountain">
               <label class="attractions__label" for="mountain">Гора-Колокол</label>
             </li>
             <li class="attractions__item">
-              <input class="attractions__field" id="rock" type="checkbox" name="rock" checked>
+              <input class="attractions__checkbox" id="rock" type="checkbox" name="rock" checked>
               <label class="attractions__label" for="rock">Красные скалы</label>
             </li>
           </ul>
@@ -115,31 +116,33 @@
       </div>
       <div class="page-footer__social">
         <div class="social-links">
-          <a class="social-link social-link--tw" href="https://twitter.com/SedonaAZ">Twitter</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/VisitSedona">Facebook</a>
-          <a class="social-link social-link--yt" href="https://www.youtube.com/user/SedonaAZ1">YouTube</a>
+          <a class="social-link  social-link--tw" href="https://twitter.com/SedonaAZ">Twitter</a>
+          <a class="social-link  social-link--fb" href="https://www.facebook.com/VisitSedona">Facebook</a>
+          <a class="social-link  social-link--yt" href="https://www.youtube.com/user/SedonaAZ1">YouTube</a>
         </div>
       </div>
       <div class="page-footer__copyright">
         Разработано
+        <a href="https://htmlacademy.ru/">HTML Academy</a>
       </div>
     </footer>
 
-    <div class="failure-popup failure-popup--show">
-      <div class="failure-popup__text-wrapper">
-        <p class="failure-popup__heading">Что-то пошло не так!</p>
-        <p class="failure-popup__text">Проверьте поля, выделенные красным. Скорее всего, вы забыли их заполнить.</p>
+
+    <div class="popup  popup--failure  popup--show">
+      <div class="popup__content">
+        <h2 class="popup__heading">Что-то пошло не так!</h2>
+        <p class="popup__text">Проверьте поля, выделенные красным. Скорее всего, вы забыли их заполнить.</p>
       </div>
-      <button class="btn btn--failure-popup" type="submit">Ok</button>
+      <button class="btn  btn--popup-failure" type="submit">Ok</button>
     </div>
 
-    <div class="success-popup success-popup--show">
-      <div class="success-popup__text-wrapper">
-        <p class="success-popup__heading">Ваш отзыв отправлен!</p>
-        <p class="success-popup__text">Спасибо за ваше участие. Ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
+    <div class="popup  popup--success  popup--show">
+      <div class="popup__content">
+        <h2 class="popup__heading">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">Спасибо за ваше участие. Ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
       </div>
-      <div class="success-popup__btn-wrapper">
-        <button class="btn btn--success-popup" type="submit">Закрыть окно</button>
+      <div class="popup__btn-wrapper">
+        <button class="btn  btn--popup-success" type="submit">Закрыть окно</button>
       </div>
     </div>
 
