@@ -1,3 +1,61 @@
 .main-nav {
-  outline: 1px solid black;
+  outline: 1px solid purple;
+
+  height: 60px;
+  padding-top: 220px;
+
+  &__wrapper {
+    position: relative;
+    margin-top: -220px;
+    height: 220px;
+
+    outline: 1px solid red;
+
+    &--closed {
+      height: 0px;
+      font-size: 0;
+      margin-top: 0;
+      /*
+      еще нужен padding-top: 0; у блока .main-nav
+      что- то намудрила, не уверена, что это можно сделать на js =))
+      */
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 22px;
+    height: 22px;
+
+    outline: 1px solid blue;
+  }
+
+  @media (min-width: $bp-tablet ) {
+    padding-top: 0px;
+
+
+    &__wrapper {
+      position: relative;
+      margin-top: 0;
+      height: 60px;
+    }
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
 }

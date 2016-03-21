@@ -1,3 +1,10 @@
 .reasons {
   outline: 1px solid black;
+
+  &__list {
+    @include clearfix;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }

@@ -1,0 +1,9 @@
+.hotel-search {
+  outline: 1px solid black;
+
+  height: 285px;
+
+  @media (min-width: $bp-tablet) {
+    height: 320px;
+  }
+}

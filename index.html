@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - Главная</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -9,7 +10,8 @@
 
     <header class="page-header">
       <nav class="main-nav"> <!--Светлый блок, в котором содеожится логотип и гамбургер-->
-        <div class="main-nav__wrapper main-nav__wrapper--closed"> <!--Синий блок с выпадающим меню-->
+        <div class="main-nav__wrapper"> <!--Синий блок с выпадающим меню-->
+          <!-- <div class="main-nav__wrapper  main-nav__wrapper--closed"> -->
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
@@ -32,11 +34,15 @@
 
     <section class="reasons">
       <ul class="reasons__list">
-        <li class="item-reason  reasons__item  reasons__item--true-town">
-          <h2 class="item-reason__title">Настоящий городок</h2>
-          <p class="item-reason__descr">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-          <div class="item-reason__image">
-            <img src="http://placehold.it/320x260" width="320" height="260" alt="Настоящий городок">
+        <li class="item-reason  reasons__item">
+          <div class="item-reason__wrapper">
+            <div class="item-reason__content  item-reason__content--true-town">
+              <h2 class="item-reason__title">Настоящий городок</h2>
+              <p class="item-reason__descr">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="item-reason__image  item-reason__image--true-town">
+              <img src="http://placehold.it/320x260" width="320" height="260" alt="Настоящий городок">
+            </div>
           </div>
 
           <ul class="features">
@@ -55,27 +61,37 @@
           </ul>
         </li>
 
-        <li class="item-reason  reasons__item  reasons__item--devils-bridge">
-          <h2 class="item-reason__title">Там есть мост дьявола</h2>
-          <p class="item-reason__descr">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
-          <div class="item-reason__image">
-            <img src="http://placehold.it/320x260" width="320" height="260" alt="Мост дьявола">
+        <li class="item-reason  reasons__item">
+          <div class="item-reason__wrapper">
+            <div class="item-reason__content  item-reason__content--devils-bridge">
+              <h2 class="item-reason__title">Там есть мост дьявола</h2>
+              <p class="item-reason__descr">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            </div>
+            <div class="item-reason__image  item-reason__image--devils-bridge">
+              <img src="http://placehold.it/320x260" width="320" height="260" alt="Мост дьявола">
+            </div>
           </div>
         </li>
 
         <li class="item-reason  reasons__item">
-          <h2 class="item-reason__title">Небольшая площадь</h2>
-          <p class="item-reason__descr">Все достопримечательности находятся очень близко</p>
+          <div class="item-reason__content  item-reason__content--no-photo">
+            <h2 class="item-reason__title">Небольшая площадь</h2>
+            <p class="item-reason__descr">Все достопримечательности находятся очень близко</p>
+          </div>
         </li>
 
         <li class="item-reason  reasons__item">
-          <h2 class="item-reason__title">Красивая дорога</h2>
-          <p class="item-reason__descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <div class="item-reason__content  item-reason__content--no-photo">
+            <h2 class="item-reason__title">Красивая дорога</h2>
+            <p class="item-reason__descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
 
         <li class="item-reason  reasons__item">
-          <h2 class="item-reason__title">Мало туристов</h2>
-          <p class="item-reason__descr">Большинство едет в Гранд Каньон и толпится там</p>
+          <div class="item-reason__content  item-reason__content--no-photo">
+            <h2 class="item-reason__title">Мало туристов</h2>
+            <p class="item-reason__descr">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
       </ul>
     </section>

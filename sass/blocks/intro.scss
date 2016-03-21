@@ -1,3 +1,9 @@
 .intro {
   outline: 1px solid black;
+
+  height: 620px;
+
+  @media  (min-width: $bp-tablet ) {
+    height: 730px;
+  }
 }

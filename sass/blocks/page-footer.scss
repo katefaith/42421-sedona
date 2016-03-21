@@ -1,3 +1,54 @@
 .page-footer {
   outline: 1px solid black;
+  @include clearfix;
+
+  &__out-link,
+  &__social,
+  &__copyright {
+    margin: 0 auto;
+  }
+
+  &__out-link {
+    width: 100px;
+  }
+
+  &__social {
+    width: 200px;
+  }
+
+  &__copyright {
+    width: 240px;
+  }
+
+  @media (min-width: $bp-tablet) {
+    margin-left: 60px;
+    margin-right: 60px;
+
+    &__out-link {
+      float: left;
+      width: 196px;
+    }
+
+    &__social {
+      float: left;
+      width: 256px;
+    }
+
+    &__copyright {
+      float: right;
+      width: 196px;
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-left: 0;
+    margin-right: 0;
+
+    &__out-link,
+    &__social,
+    &__copyright {
+      width: 400px;
+    }
+
+  }
 }
