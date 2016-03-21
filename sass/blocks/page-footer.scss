@@ -6,6 +6,7 @@
   &__social,
   &__copyright {
     margin: 0 auto;
+    padding-top: 20px;
   }
 
   &__out-link {
@@ -18,11 +19,12 @@
 
   &__copyright {
     width: 240px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $bp-tablet) {
-    margin-left: 60px;
-    margin-right: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 
     &__out-link {
       float: left;
@@ -41,8 +43,8 @@
   }
 
   @media (min-width: $bp-desktop) {
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 
     &__out-link,
     &__social,
