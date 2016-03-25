@@ -9,30 +9,34 @@
   <body>
 
     <header class="page-header">
-      <nav class="main-nav"> <!--Светлый блок, в котором содеожится логотип и гамбургер-->
-        <div class="main-nav__wrapper"> <!--Синий блок с выпадающим меню-->
-          <!-- <div class="main-nav__wrapper  main-nav__wrapper--closed"> -->
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">Html Academy</a></li>
-          </ul>
-          <span class="main-nav__toggle main-nav__toggle--closed">Меню</span>
-        </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#">Html Academy</a></li>
+        </ul>
+        <button class="main-nav__toggle main-nav__toggle--closed"></button>
       </nav>
 
-      <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип"></a>
+      <div class="page-header__logo-wrapper">
+        <div class="page-header__logo">
+          <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип"></a>
+        </div>
       </div>
     </header>
 
-    <section class="intro">
-      <h1 class="intro__heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    </section>
-
     <section class="reasons">
+      <section class="intro">
+        <div class="intro__image-wrap">
+          <img class="intro-image" src="http://placehold.it/320x390" width="320" height="390" alt="Image">
+        </div>
+        <div class="intro__text-wrap">
+          <h1 class="intro__heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+      </section>
+
       <ul class="reasons__list">
         <li class="item-reason  reasons__item">
           <div class="item-reason__wrapper">
@@ -125,3 +129,17 @@
 
   </body>
 </html>
+
+<script>
+  // Получаем элементы
+  var nav = document.querySelector('.main-nav__list');
+  var buttClose = document.querySelector('.main-nav__toggle');
+
+  // Класс, обозначающий закрытое меню
+  var statusClose = 'main-nav__list--closed';
+
+  // Событие по нажатию на кнопку
+  buttClose.onclick = function() {
+      nav.classList.toggle( statusClose );
+  }
+</script>
