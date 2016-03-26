@@ -1,4 +1,5 @@
 .hotel-search {
+  @include clearfix;
   height: 285px;
 
   @media (min-width: $bp-tablet) {
