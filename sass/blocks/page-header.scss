@@ -6,10 +6,7 @@
 }
 
 .page-header__logo-wrapper {
-  //position: relative;
   height: 60px;
-
-
 
   @media (min-width: $bp-tablet) {
     height: 0px;
@@ -17,16 +14,20 @@
   }
 }
 
-
   .page-header__logo {
-    //position: absolute;
-    //left: 0;
-    //right: 0;
     margin: 0 auto;
-    //display: block;
     width: 102px;
     height: 83px;
 
     outline: 1px solid red;
 
+    @media (min-width: $bp-tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
   }
+
+

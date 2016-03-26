@@ -17,7 +17,10 @@
 }
 
 .main-nav__list--closed {
-  display: none;
+
+  @media (max-width: $bp-tablet) {
+    display: none;
+  }
 }
 
 .main-nav__item {
@@ -39,7 +42,8 @@
 .main-nav__item a {
   display: block;
   padding: 7px 0;
-  font-family: $font-bold;
+  font-family: $font;
+  font-weight: bold;
   font-size: 18px;
   line-height: 40px;
   color: $font-color-white;

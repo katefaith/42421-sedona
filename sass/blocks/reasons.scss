@@ -1,0 +1,33 @@
+.reasons {
+  outline: 1px solid green;
+
+}
+
+/*.intro {
+  outline: 1px solid blue;
+}*/
+
+.reasons__text-wrap {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.reasons__heading {
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: bold;
+}
+
+.reasons__text {
+  font-size: 14px;
+  line-height: 1.85;
+  font-weight: normal;
+}
+
+
+.reasons__list {
+  @include clearfix;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

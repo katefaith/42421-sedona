@@ -10,7 +10,7 @@
 
     <header class="page-header">
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list  main-nav__list--closed">
           <li class="main-nav__item  main-nav__item--active"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
           <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
@@ -24,27 +24,26 @@
           <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип"></a>
         </div>
       </div>
+
     </header>
 
     <section class="reasons">
-      <section class="intro">
-        <div class="intro__image-wrap">
-          <img class="intro-image" src="http://placehold.it/320x390" width="320" height="390" alt="Image">
-        </div>
-        <div class="intro__text-wrap">
-          <h1 class="intro__heading">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
-      </section>
+      <div class="reasons__image">
+        <img src="http://placehold.it/320x390" width="320" height="390" alt="Image">
+      </div>
+      <div class="reasons__text-wrap">
+        <h1 class="reasons__heading">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</h1>
+        <p class="reasons__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
 
       <ul class="reasons__list">
         <li class="item-reason  reasons__item">
           <div class="item-reason__wrapper">
-            <div class="item-reason__content  item-reason__content--true-town">
+            <div class="item-reason__content  item-reason__content--to-left">
               <h2 class="item-reason__title">Настоящий городок</h2>
               <p class="item-reason__descr">Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="item-reason__image  item-reason__image--true-town">
+            <div class="item-reason__image  item-reason__image--to-right">
               <img src="http://placehold.it/320x260" width="320" height="260" alt="Настоящий городок">
             </div>
           </div>
@@ -67,11 +66,11 @@
 
         <li class="item-reason  reasons__item">
           <div class="item-reason__wrapper">
-            <div class="item-reason__content  item-reason__content--devils-bridge">
+            <div class="item-reason__content  item-reason__content--to-right">
               <h2 class="item-reason__title">Там есть мост дьявола</h2>
               <p class="item-reason__descr">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
             </div>
-            <div class="item-reason__image  item-reason__image--devils-bridge">
+            <div class="item-reason__image  item-reason__image--to-left">
               <img src="http://placehold.it/320x260" width="320" height="260" alt="Мост дьявола">
             </div>
           </div>
@@ -127,19 +126,7 @@
       </div>
     </footer>
 
+    <script src="js/script.js"></script>
   </body>
 </html>
 
-<script>
-  // Получаем элементы
-  var nav = document.querySelector('.main-nav__list');
-  var buttClose = document.querySelector('.main-nav__toggle');
-
-  // Класс, обозначающий закрытое меню
-  var statusClose = 'main-nav__list--closed';
-
-  // Событие по нажатию на кнопку
-  buttClose.onclick = function() {
-      nav.classList.toggle( statusClose );
-  }
-</script>
