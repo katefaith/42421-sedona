@@ -2,35 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - Форма отзыва</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <nav class="main-nav"> <!--Светлый блок, в котором содеожится логотип и гамбургер-->
-        <div class="main-nav__wrapper main-nav__wrapper--closed"> <!--Обертка для выпадающего меню-->
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a href="photo.html">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">Html Academy</a></li>
-          </ul>
-          <span class="main-nav__toggle main-nav__toggle--closed">Меню</span>
-        </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list  main-nav__list--closed">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#">Html Academy</a></li>
+        </ul>
+        <button class="main-nav__toggle main-nav__toggle--closed"></button>
       </nav>
 
-      <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип"></a>
+      <div class="page-header__logo-wrapper">
+        <div class="page-header__logo">
+          <a href="index.html"><img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип"></a>
+        </div>
+      </div>
+
+      <div class="page-header__image">
+        <img src="http://placehold.it/320x390" width="320" height="390" alt="Image">
       </div>
     </header>
 
-    <section class="inner-intro">
-      <h1 class="inner-intro__heading">Оставьте свой отзыв</h1>
-      <p class="inner-intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </section>
-
     <div class="review-form">
+      <div class="review-form__text-wrapper">
+        <h1 class="review-form__heading">Оставьте свой отзыв</h1>
+        <p class="review-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
       <form action="" method="post">
         <fieldset class="fullname">
           <legend class="fullname__heading">Представьтесь, пожалуйста:</legend>
@@ -147,5 +151,6 @@
       </div>
     </div>
 
+    <script src="js/script.js"></script>
   </body>
 </html>
