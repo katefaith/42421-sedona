@@ -1,0 +1,11 @@
+.video-gallery {
+  outline: 1px solid blue;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding: 0 200px;
+  }
+}

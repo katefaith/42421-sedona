@@ -33,7 +33,7 @@
     display: inline-block;
     vertical-align: top;
 
-    &:nth-child(2n+2) {
+    &:nth-child(n+3) {
       float: right;
     }
   }

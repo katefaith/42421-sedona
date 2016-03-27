@@ -7,6 +7,6 @@ var buttClose = document.querySelector('.main-nav__toggle');
 var statusClose = 'main-nav__list--closed';
 
 // Событие по нажатию на кнопку
-buttClose.onclick = function() {
-  nav.classList.toggle( statusClose );
+buttClose.onclick = function () {
+  nav.classList.toggle(statusClose);
 }
