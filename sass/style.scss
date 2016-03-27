@@ -10,7 +10,7 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social-links.scss";
 @import "blocks/btn.scss";
-/*@import "blocks/popup.scss";*/
+@import "blocks/popup.scss";
 
 @import "blocks/reasons.scss";
 @import "blocks/item-reason.scss";
@@ -24,13 +24,13 @@
 @import "blocks/video-gallery.scss";
 @import "blocks/video.scss";
 
-/*@import "blocks/review-form.scss";
+@import "blocks/review-form.scss";
 @import "blocks/fullname.scss";
 @import "blocks/contacts.scss";
 @import "blocks/impression.scss";
 @import "blocks/attractions.scss";
 @import "blocks/emotions.scss";
-*/
+
 
 body {
   @include container;
@@ -39,4 +39,8 @@ body {
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
 }

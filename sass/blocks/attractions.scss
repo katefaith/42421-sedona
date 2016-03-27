@@ -1,0 +1,37 @@
+.attractions {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  outline: 1px solid red;
+
+  @media (min-width: $bp-tablet) {
+    order: 5;
+  }
+}
+
+.attractions__heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.attractions__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+
+  list-style: none;
+
+  @media (min-width: $bp-desktop) {
+    justify-content: space-between;
+  }
+}
+
+.attractions__item {
+  width: 100%;
+
+  @media (min-width: $bp-tablet) {
+    width: 220px; // ??? подозреваю, что это неидеальный вариант
+  }
+}

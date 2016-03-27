@@ -1,6 +1,8 @@
 .btn {
   border: 0;
 
+  text-transform: uppercase;
+
   outline: 1px solid red;
 }
 
@@ -41,4 +43,21 @@
     margin-right: 40px;
     margin-left: 40px;
   }
+}
+
+.btn--send-review {
+  width: 100%;
+
+  @media (min-width: $bp-tablet) {
+    order: 7;
+    width: 50%;
+  }
+}
+
+.btn--success {
+  margin: 0 auto;
+}
+
+.btn--failure {
+
 }

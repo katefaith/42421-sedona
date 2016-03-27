@@ -1,0 +1,33 @@
+.fullname {
+  //display: flex;
+  margin: 0;
+  padding: 0;
+  //flex-grow: 1;
+  width: 100%;
+
+  outline: 1px solid black;
+
+  @media (min-width: $bp-tablet) {
+    order: 3;
+    width: 50%
+  }
+}
+
+.fullname__heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.fullname__wrapper {
+  display: flex;
+
+  text-transform: none;
+}
+
+.fullname__label {
+  padding-right: 20px;
+}
+
+.fullname__field {
+  flex-grow: 1;
+}

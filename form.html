@@ -30,12 +30,12 @@
       </div>
     </header>
 
-    <div class="review-form">
-      <div class="review-form__text-wrapper">
-        <h1 class="review-form__heading">Оставьте свой отзыв</h1>
-        <p class="review-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
-      <form action="" method="post">
+      <form class="review-form" action="" method="post">
+        <div class="review-form__text-wrapper">
+          <h1 class="review-form__heading">Оставьте свой отзыв</h1>
+          <p class="review-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+
         <fieldset class="fullname">
           <legend class="fullname__heading">Представьтесь, пожалуйста:</legend>
           <div class="fullname__wrapper">
@@ -84,7 +84,7 @@
         </fieldset>
 
         <fieldset class="attractions">
-          <legend class="attractions__heading">Посещенные достопримечательности:</legend>
+          <legend class="attractions__heading">Посещенные <br> достопримечательности:</legend>
           <ul class="attractions__list">
             <li class="attractions__item">
               <input class="attractions__checkbox" id="bridge" type="checkbox" name="bridge" checked>
@@ -111,9 +111,9 @@
         </fieldset>
 
         <button class="btn btn--send-review" type="submit">Отправить отзыв</button>
+        <span class="review-form__required">* - обязательные поля</span>
 
       </form>
-    </div>
 
     <footer class="page-footer">
       <div class="page-footer__out-link">
