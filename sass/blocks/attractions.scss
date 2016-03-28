@@ -19,12 +19,16 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  justify-content: center;
 
   list-style: none;
 
+  @media (min-width: $bp-tablet) {
+    padding-left: 95px;
+  }
+
   @media (min-width: $bp-desktop) {
     justify-content: space-between;
+    padding-left: 0;
   }
 }
 
@@ -32,6 +36,10 @@
   width: 100%;
 
   @media (min-width: $bp-tablet) {
-    width: 220px; // ??? подозреваю, что это неидеальный вариант
+    width: 260px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: auto;
   }
 }
