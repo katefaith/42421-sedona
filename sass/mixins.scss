@@ -1,0 +1,21 @@
+@mixin clearfix {
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $bp-tablet){
+    width: 768px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    width: 1200px;
+  }
+}

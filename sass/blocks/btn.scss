@@ -1,3 +1,63 @@
 .btn {
-  outline: 1px solid black;
+  border: 0;
+
+  text-transform: uppercase;
+
+  outline: 1px solid red;
+}
+
+.btn--repeat {
+  margin-left: 25px;
+  width: 16px;
+  height: 20px;
+
+  background: url("/img/icon-video-replay.svg") no-repeat;
+
+  @media (min-width: $bp-tablet) {
+    margin-right: 40px;
+    margin-left: 35px;
+  }
+}
+
+.btn--cc {
+  width: 32px;
+  height: 20px;
+  margin-left: auto;
+
+  background: url("/img/icon-video-subtitles.svg") no-repeat;
+
+  @media (min-width: $bp-tablet) {
+    margin-left: 40px;
+  }
+}
+
+.btn--fullscreen {
+  width: 20px;
+  height: 20px;
+  margin-right: 22px;
+  margin-left: 32px;
+
+  background: url("/img/icon-video-fullscreen.svg") no-repeat;
+
+  @media (min-width: $bp-tablet) {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+}
+
+.btn--send-review {
+  width: 100%;
+
+  @media (min-width: $bp-tablet) {
+    order: 7;
+    width: 50%;
+  }
+}
+
+.btn--success {
+  margin: 0 auto;
+}
+
+.btn--failure {
+
 }

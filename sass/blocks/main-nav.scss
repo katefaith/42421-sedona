@@ -1,3 +1,103 @@
 .main-nav {
-  outline: 1px solid black;
+  position: relative;
+  background: $blue;
+
+  //outline: 1px solid purple;
+
+  @media (min-width: $bp-tablet) {
+    background: $white;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  box-shadow: inset 0 -3px 7px -2px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: $bp-tablet) {
+    box-shadow: none;
+  }
+}
+
+.main-nav__list--closed {
+
+  @media (max-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $bp-tablet) {
+    display: inline-block;
+    vertical-align: top;
+
+    &:nth-child(n+3) {
+      float: right;
+    }
+  }
+}
+
+.main-nav__item a {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2.22;
+  color: $font-color-white;
+  text-decoration: none;
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  &:hover {
+    background-color: $blue-hvr;
+  }
+
+  @media (min-width: $bp-tablet) {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 26px;
+    color: $font-color-dark;
+    border: none;
+
+    &:hover {
+      background-color: $white;
+      color: $font-color-blue;
+    }
+  }
+
+
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+
+  background: none;
+  border: none;
+
+  //outline: 1px solid blue;
+
+  @media (min-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--closed {
+  &:before {
+    content: '\2715';
+  }
+  // Меняем иконку
+  .main-nav__list--closed + &:before {
+    content: '\2261';
+  }
+
 }

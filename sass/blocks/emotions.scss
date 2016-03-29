@@ -1,3 +1,24 @@
 .emotions {
-  outline: 1px solid black;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  outline: 1px solid blue;
+
+  @media (min-width: $bp-tablet) {
+    order: 6;
+  }
+}
+
+.emotions__heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.emotions__field {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: gray;
 }

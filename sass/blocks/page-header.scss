@@ -1,3 +1,37 @@
 .page-header {
-  outline: 1px solid black;
+  //background: url(/img/bg-back-mobile.jpg) no-repeat;
+
+  //outline: 1px solid green;
+
 }
+
+.page-header__logo-wrapper {
+  height: 60px;
+
+  @media (min-width: $bp-tablet) {
+    height: 0px;
+
+  }
+}
+
+  .page-header__logo {
+    margin: 0 auto;
+    width: 102px;
+
+    outline: 1px solid red;
+
+    @media (min-width: $bp-tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+ .page-header__logo img {
+    width: 102px;
+    height: 83px;
+ }
+
+
