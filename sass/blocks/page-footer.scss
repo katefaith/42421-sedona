@@ -70,7 +70,7 @@
 
 
 .page-footer {
-  @include clearfix;
+  //@include clearfix;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +83,11 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 35px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -100,6 +105,10 @@
   @media (min-width: $bp-tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $bp-desktop) {
+    padding-left: 130px;
+  }
 }
 
 .page-footer__social {
@@ -109,6 +118,10 @@
   @media (min-width: $bp-tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $bp-desktop) {
+    padding-right: 95px;
+  }
 }
 
 .page-footer__copyright {
@@ -117,6 +130,10 @@
 
   @media (min-width: $bp-tablet) {
 
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-right: 45px;
   }
 }
 

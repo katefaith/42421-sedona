@@ -52,7 +52,7 @@
 
     @media (min-width: $bp-tablet) {
       width: 75px;
-      height: 72px;
+      height: 73px;
       background-size: 75px auto;
     }
   }
@@ -65,13 +65,13 @@
 
   &:before {
     width: 32px;
-    height: 38px;
+    height: 41px;
     background-image: url("/img/icon-gift.svg");
     background-size: 32px auto;
 
     @media (min-width: $bp-tablet) {
       width: 64px;
-      height: 75px;
+      height: 76px;
       background-size: 64px auto;
     }
   }
@@ -84,13 +84,13 @@
 
   &:before {
     width: 40px;
-    height: 36px;
+    height: 37px;
     background-image: url("/img/icon-burger.svg");
     background-size: 40px auto;
 
     @media (min-width: $bp-tablet) {
       width: 77px;
-      height: 68px;
+      height: 69px;
       background-size: 77px auto;
     }
   }
