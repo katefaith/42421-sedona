@@ -67,6 +67,10 @@
   }
 }
 
+.item-reason:last-child .item-reason__content--bg-gray:after {
+  border-bottom: 0;
+}
+
 .item-reason__content--to-left {
   @media (min-width: $bp-tablet) {
     float: left;

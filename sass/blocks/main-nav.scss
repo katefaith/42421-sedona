@@ -114,8 +114,8 @@
   top: 17px;
   right: 20px;
   width: 23px;
-  height: 23px;
-  height: 23px;
+  height: 22px;
+  padding: 0;
 
   background: none;
   border: none;
@@ -129,16 +129,19 @@
   &:before {
     //content: '\2715';
     content: "";
-    background: url("/img/icon-menu.svg") top left no-repeat;
-    background-size: 23px 23px;
+    display: block;
+    width: 23px;
+    height: 22px;
+    background: url("/img/icon-cross.svg") no-repeat;
+    background-size: 23px 22px;
 
   }
   // Меняем иконку
   .main-nav__list--closed + &:before {
     //content: '\2261';
     content: "";
-    background: url("/img/icon-cross.svg") top left no-repeat;
-    background-size: 23px 23px;
+    background: url("/img/icon-menu.svg") no-repeat;
+    background-size: 23px 22px;
   }
 
 }
