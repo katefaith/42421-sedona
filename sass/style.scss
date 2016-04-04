@@ -39,6 +39,20 @@ body {
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+
+  /*
+  @media (max-width: ($bp-tablet - 1)) {
+    background: url("/img/makets/sedona-index-mobile.jpg") center top no-repeat;
+  }
+
+  @media (min-width: $bp-tablet) {
+    background: url("/img/makets/sedona-index-tablet.png") center top no-repeat;
+  }
+
+  @media (min-width: $bp-desktop) {
+    background: url("/img/makets/sedona-index-desktop.png") center top no-repeat;
+  }*/
+
 }
 
 fieldset {

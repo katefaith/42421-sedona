@@ -1,7 +1,5 @@
-.page-footer {
+/*.page-footer {
   @include clearfix;
-
-
   outline: 1px solid black;
 
   @media (min-width: $bp-tablet) {
@@ -66,4 +64,68 @@
     text-align: right;
 
   }
+}*/
+
+.page-footer {
+  @include clearfix;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 245px;
+  //outline: 1px solid black;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0 60px;
+    //flex-direction: row;
+    min-height: 120px;
+    //justify-content: space-between;
+    //align-items: stretch;
+  }
 }
+
+.page-footer__out-link {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.238;
+
+  a {
+    text-decoration: none;
+    color: $font-black;
+  }
+
+  @media (min-width: $bp-tablet) {
+    //margin-left: 60px;
+    //margin-right: auto;
+    width: 33.3%;
+    align-self: flex-start;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: $bp-tablet) {
+    //width: 33.3%;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $bp-tablet) {
+    //width: 33.3%;
+    align-self: flex-end;
+  }
+}
+
+.page-footer__copyright svg {
+  width: 27px;
+  height: 34px;
+  margin-left: 10px;
+
+  &:hover {
+    fill: $bg-blue;
+  }
+}
+

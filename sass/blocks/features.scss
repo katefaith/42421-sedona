@@ -1,9 +1,18 @@
 .features {
   @include clearfix;
+  display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 35px;
+  padding-bottom: 5px;
 
-  outline: 1px solid black;
+  background-color: $bg-white;
+
+  @media (min-width: $bp-tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

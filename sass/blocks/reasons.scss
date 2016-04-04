@@ -1,29 +1,40 @@
 .reasons {
   @include clearfix;
-  outline: 1px solid green;
 }
-
-/*.intro {
-  outline: 1px solid blue;
-}*/
 
 .reasons__text-wrap {
   padding: 0 30px;
+  padding-top: 40px;
+  padding-bottom: 45px;
   text-align: center;
+
+  @media (min-width: $bp-tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .reasons__heading {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 18px;
   line-height: 1.44;
   font-weight: bold;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 21px;
+  line-height: 1.238;
+  }
 }
 
 .reasons__text {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.85;
   font-weight: normal;
 }
-
 
 .reasons__list {
   @include clearfix;
@@ -31,3 +42,4 @@
   padding: 0;
   margin: 0;
 }
+

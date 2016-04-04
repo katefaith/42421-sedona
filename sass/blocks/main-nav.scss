@@ -2,8 +2,6 @@
   position: relative;
   background: $bg-blue;
 
-  //outline: 1px solid purple;
-
   @media (min-width: $bp-tablet) {
     background: $bg-white;
   }
@@ -18,11 +16,13 @@
 
   @media (min-width: $bp-tablet) {
     box-shadow: none;
+
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .main-nav__list--closed {
-
   @media (max-width: ($bp-tablet - 1)) {
     display: none;
   }
@@ -33,8 +33,20 @@
     display: inline-block;
     vertical-align: top;
 
+    flex-basis: 25%;
+
     &:nth-child(n+3) {
       float: right;
+    }
+
+    &:nth-child(2) {
+      margin-right: 150px;
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    &:nth-child(2) {
+      margin-right: 245px;
     }
   }
 }
@@ -42,7 +54,7 @@
 .main-nav__item a {
   display: block;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 
   font-weight: bold;
   font-size: 18px;
@@ -64,7 +76,9 @@
   }
 
   @media (min-width: $bp-tablet) {
-    padding: 15px 25px;
+    padding: 15px 0;
+
+
     font-size: 14px;
     line-height: 26px;
     color: $font-black;
@@ -84,14 +98,14 @@
 .main-nav__item--active a {
   @media (min-width: $bp-tablet) {
     color: $font-brown;
-  }
 
-  &:hover {
-    color: $font-brown-hvr;
-  }
+    &:hover {
+      color: $font-brown-hvr;
+    }
 
-  &:active {
-    color: $font-brown-down;
+    &:active {
+      color: $font-brown-down;
+    }
   }
 }
 
@@ -99,13 +113,12 @@
   position: absolute;
   top: 17px;
   right: 20px;
-  width: 22px;
-  height: 22px;
+  width: 23px;
+  height: 23px;
+  height: 23px;
 
   background: none;
   border: none;
-
-  //outline: 1px solid blue;
 
   @media (min-width: $bp-tablet) {
     display: none;
@@ -114,11 +127,18 @@
 
 .main-nav__toggle--closed {
   &:before {
-    content: '\2715';
+    //content: '\2715';
+    content: "";
+    background: url("/img/icon-menu.svg") top left no-repeat;
+    background-size: 23px 23px;
+
   }
   // Меняем иконку
   .main-nav__list--closed + &:before {
-    content: '\2261';
+    //content: '\2261';
+    content: "";
+    background: url("/img/icon-cross.svg") top left no-repeat;
+    background-size: 23px 23px;
   }
 
 }

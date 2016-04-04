@@ -1,9 +1,26 @@
 .btn {
   border: 0;
+}
 
+.btn--blue {
+  color: $font-white;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.238;
   text-transform: uppercase;
+  text-decoration: none;
 
-  outline: 1px solid red;
+  background-color: $bg-blue;
+  //outline: 1px solid red;
+
+  &:hover {
+    background-color: $bg-blue-hvr;
+  }
+
+  &:active {
+    color: $font-white-down;
+    background-color: $bg-blue-down;
+  }
 }
 
 .btn--repeat {
@@ -60,4 +77,10 @@
 
 .btn--failure {
 
+}
+
+.btn--start-search {
+  display: block;
+  padding: 17px;
+  //margin-bottom: 50px;
 }
