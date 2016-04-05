@@ -24,17 +24,23 @@
 }
 
 .btn--repeat {
-  margin-left: 25px;
+  margin-left: 20px;
   width: 16px;
   height: 20px;
 
-  background: url("/img/icon-video-replay.svg") no-repeat;
+  //background: url("/img/icon-video-replay.svg") no-repeat;
+  background-color: transparent;
 
   @media (min-width: $bp-tablet) {
     //margin-right: 40px;
-    margin-left: 35px;
+    margin-left: 30px;
     order: -1;
-    flex-shrink: 0
+  }
+}
+
+.btn--repeat path {
+  @media (min-width: $bp-tablet) {
+    fill: $bg-white;
   }
 }
 
@@ -43,32 +49,42 @@
   height: 20px;
   margin-left: auto;
 
-  background: url("/img/icon-video-subtitles.svg") no-repeat;
-
-  fill: red; // ???
-
-  path {
-    fill: red; // ????
-  }
+  //background: url("/img/icon-video-subtitles.svg") no-repeat;
+  background-color: transparent;
 
   @media (min-width: $bp-tablet) {
-    margin-right: 30px;
-    flex-shrink: 0
+    margin-right: 32px;
+  }
+}
+
+.btn--cc path {
+  @media (min-width: $bp-tablet) {
+    fill: $bg-white;
   }
 }
 
 .btn--fullscreen {
   width: 20px;
   height: 20px;
-  margin-right: 22px;
+  margin-right: 28px;
   margin-left: 32px;
 
-  background: url("/img/icon-video-fullscreen.svg") no-repeat;
+  //background: url("/img/icon-video-fullscreen.svg") no-repeat;
+  background-color: transparent;
 
   @media (min-width: $bp-tablet) {
-    margin-right: 40px;
+    margin-right: 46px;
     margin-left: 0;
-    flex-shrink: 0
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-right: 48px;
+  }
+}
+
+.btn--fullscreen g {
+  @media (min-width: $bp-tablet) {
+    fill: $bg-white;
   }
 }
 
