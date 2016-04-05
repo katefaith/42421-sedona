@@ -35,8 +35,8 @@
 
 .item-reason__content--bg-gray {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   //height: 165px;
   color: $font-gray;
   background-color: $bg-gray;
@@ -63,7 +63,7 @@
   }
 
   @media (min-width: $bp-desktop) {
-    padding-bottom: 65px;
+    padding-bottom: 67px;
   }
 }
 

@@ -40,17 +40,32 @@ body {
   line-height: 1.5;
   text-transform: uppercase;
 
-  /*
-  @media (max-width: ($bp-tablet - 1)) {
-    background: url("/img/makets/sedona-index-mobile.jpg") center top no-repeat;
-  }
+  /*&:after {
+    content: "";
 
-  @media (min-width: $bp-tablet) {
-    background: url("/img/makets/sedona-index-tablet.png") center top no-repeat;
-  }
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 
-  @media (min-width: $bp-desktop) {
-    background: url("/img/makets/sedona-index-desktop.png") center top no-repeat;
+    min-height: 4000px;
+    pointer-events: none;
+
+    background-image: url("../img/makets/sedona-photo-mobile.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    opacity: .2;
+    mix-blend-mode: difference;
+
+    @media (min-width: $bp-tablet) {
+      background: url("../img/makets/sedona-photo-tablet.png") center top no-repeat;
+    }
+
+    @media (min-width: $bp-desktop) {
+      background: url("../img/makets/sedona-photo-desktop.jpg") center top no-repeat;
+    }
   }*/
 
 }

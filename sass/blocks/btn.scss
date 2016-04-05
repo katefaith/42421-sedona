@@ -31,8 +31,10 @@
   background: url("/img/icon-video-replay.svg") no-repeat;
 
   @media (min-width: $bp-tablet) {
-    margin-right: 40px;
+    //margin-right: 40px;
     margin-left: 35px;
+    order: -1;
+    flex-shrink: 0
   }
 }
 
@@ -43,8 +45,15 @@
 
   background: url("/img/icon-video-subtitles.svg") no-repeat;
 
+  fill: red; // ???
+
+  path {
+    fill: red; // ????
+  }
+
   @media (min-width: $bp-tablet) {
-    margin-left: 40px;
+    margin-right: 30px;
+    flex-shrink: 0
   }
 }
 
@@ -58,7 +67,8 @@
 
   @media (min-width: $bp-tablet) {
     margin-right: 40px;
-    margin-left: 40px;
+    margin-left: 0;
+    flex-shrink: 0
   }
 }
 

@@ -74,7 +74,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 20px;
 
   @media (min-width: $bp-tablet) {
@@ -95,7 +95,7 @@
   font-size: 21px;
   font-weight: bold;
   line-height: 1.238;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
   a {
     text-decoration: none;
@@ -113,7 +113,7 @@
 
 .page-footer__social {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @media (min-width: $bp-tablet) {
     margin-bottom: 0;
@@ -138,6 +138,7 @@
 }
 
 .page-footer__copyright a {
+  padding-top: 5px;
   &:hover {
     fill: $bg-blue;
   }
@@ -146,7 +147,7 @@
 .page-footer__copyright svg {
   width: 27px;
   height: 34px;
-  margin-left: 10px;
+  margin-left: 14px;
 }
 
 

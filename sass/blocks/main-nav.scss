@@ -30,9 +30,6 @@
 
 .main-nav__item {
   @media (min-width: $bp-tablet) {
-    display: inline-block;
-    vertical-align: top;
-
     flex-basis: 25%;
 
     &:nth-child(n+3) {
