@@ -8,6 +8,15 @@
   </head>
   <body>
 
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="icon-phone" viewBox="0 0 22 20" >
+        <path d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029
+				l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1
+				C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z
+				 M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+      </symbol>
+    </svg>
+
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list  main-nav__list--closed">
@@ -48,7 +57,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648">
-                <img class="picture" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы">
+                <img class="picture" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
               </picture>
             </a>
           </div>
@@ -59,7 +68,8 @@
               <p class="item-photo__autor">Автор фото: Борис</p>
             </div>
             <div class="item-photo__like">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg><use xlink:href="#your-symbol"/></svg>
+           <!--   <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
                 <g id="Page-1">
       <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -71,7 +81,7 @@
           </g>
       </g>
                 </g>
-              </svg>
+              </svg> -->
               <span>1350</span>
             </div>
           </div>
@@ -83,7 +93,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="400">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" width="324">
-                <img class="picture" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" width="280" height="280" alt="Местная растительность">
+                <img class="picture" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
               </picture>
 
             </a>
@@ -95,12 +105,12 @@
               <p class="item-photo__autor">Автор фото: Сергей</p>
             </div>
             <div class="item-photo__like">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                <g id="Page-1">
-      <g id="Core" transform="translate(-295.000000, -464.000000)">
-          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-              <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029
+                <g >
+      <g transform="translate(-295.000000, -464.000000)">
+          <g transform="translate(295.000000, 464.000000)">
+              <path fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029
                   l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1
                   C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z
                    M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
@@ -119,7 +129,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="400">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="324">
-                <img class="picture" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" width="280" height="280" alt="Дорога на север">
+                <img class="picture" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
               </picture>
 
             </a>
@@ -131,12 +141,12 @@
               <p class="item-photo__autor">Автор фото: Петр</p>
             </div>
             <div class="item-photo__like">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                <g id="Page-1">
-      <g id="Core" transform="translate(-295.000000, -464.000000)">
-          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-              <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029
+                <g>
+      <g transform="translate(-295.000000, -464.000000)">
+          <g transform="translate(295.000000, 464.000000)">
+              <path fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029
                   l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1
                   C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z
                    M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
@@ -154,8 +164,8 @@
             <a href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="400">
-                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="324">
-                <img class="picture" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg" width="280" height="280" alt="Мост дьявола">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" width="324">
+                <img class="picture" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
               </picture>
 
             </a>
@@ -167,12 +177,12 @@
               <p class="item-photo__autor">Автор фото: Антон</p>
             </div>
             <div class="item-photo__like">
-              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                <g id="Page-1">
-      <g id="Core" transform="translate(-295.000000, -464.000000)">
-          <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-              <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029
+                <g>
+      <g transform="translate(-295.000000, -464.000000)">
+          <g transform="translate(295.000000, 464.000000)">
+              <path fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029
                   l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1
                   C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z
                    M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
@@ -206,13 +216,13 @@
             <div class="video__progress-toggle"></div>
           </div>
           <button class="btn  btn--repeat">
-            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
               <path  fill="#5c6870" d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
             </svg>
           </button>
           <button class="btn  btn--cc">
-            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve">
               <path fill="#5c6870" d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z
 	 M14.403,15.854c-0.545,0.108-1.104,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041
@@ -233,7 +243,7 @@
             </svg>
           </button>
           <button class="btn  btn--fullscreen">
-            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
               <g fill="#5c6870">
                 <polygon points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0 	"/>
@@ -265,9 +275,9 @@
       <div class="page-footer__social">
         <div class="social-links">
           <a class="social-links__item  social-links__item--tw" href="https://twitter.com/SedonaAZ">Twitter
-            <svg class="social-links__icon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-              <g id="W6EeEF_1_">
+              <g>
 	<g>
 		<path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15
 			c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86
@@ -280,7 +290,7 @@
             </svg>
           </a>
           <a class="social-links__item  social-links__item--fb" href="https://www.facebook.com/VisitSedona">Facebook
-            <svg class="social-links__icon" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
               <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114
 	H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787
@@ -288,7 +298,7 @@
             </svg>
           </a>
           <a class="social-links__item  social-links__item--yt" href="https://www.youtube.com/user/SedonaAZ1">YouTube
-            <svg class="social-links__icon" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="social-links__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
               <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835
 	C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
@@ -299,7 +309,7 @@
       <div class="page-footer__copyright">
         <span>Разработано</span>
         <a href="https://htmlacademy.ru/">
-          <svg id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
 	L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5

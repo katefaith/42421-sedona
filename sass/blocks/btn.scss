@@ -3,6 +3,7 @@
 }
 
 .btn--blue {
+  padding: 17px;
   color: $font-white;
   font-weight: bold;
   font-size: 21px;
@@ -97,16 +98,31 @@
   }
 }
 
+.btn--failure,
 .btn--success {
-  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.444;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 21px;
+    line-height: 1.238;
+  }
+}
+
+.btn--success {
+  //margin: 0 auto;
+  padding: 15px;
+  width: 100%;
 }
 
 .btn--failure {
-
+  display: block;
+  margin: 0 auto;
+  padding: 15px 75px;
 }
 
 .btn--start-search {
   display: block;
-  padding: 17px;
+  //padding: 17px;
   //margin-bottom: 50px;
 }

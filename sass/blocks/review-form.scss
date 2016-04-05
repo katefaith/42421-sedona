@@ -2,11 +2,14 @@
   @include clearfix;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0 20px;
-  outline: 1px solid purple;
+  margin-bottom: 30px;
+  //outline: 1px solid purple;
 
   @media (min-width: $bp-tablet) {
     padding: 0 60px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $bp-desktop) {
@@ -15,11 +18,54 @@
 }
 
 .review-form__text-wrapper {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 20px;
   text-align: center;
+
+  /*&:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: 320px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }*/
 
   @media (min-width: $bp-tablet) {
     order: 1;
+    padding-top: 55px;
+    padding-bottom: 77px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
+
+  @media (min-width: $bp-desktop) {
+    order: 1;
+    padding-top: 93px;
+    padding-bottom: 62px;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+}
+
+.review-form__heading {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.444;
+  font-weight: bold;
+
+  @media (min-width: $bp-tablet) {
+    font-size: 30px;
+    line-height: 0.866;
+  }
+}
+
+.review-form__text {
+  font-size: 14px;
+  line-height: 1.714;
+  margin: 0;
 }
 
 .review-form__required {

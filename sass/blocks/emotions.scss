@@ -1,24 +1,86 @@
 .emotions {
-  display: flex;
+  position: relative;
   width: 100%;
   padding: 0;
   margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
 
-  outline: 1px solid blue;
+  //outline: 1px solid blue;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 320px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $bp-tablet) {
     order: 6;
+    margin-bottom: 55px;
+
+    &:before {
+      z-index: 1;
+      left: 0;
+      top: 12px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    margin-bottom: 48px;
   }
 }
 
 .emotions__heading {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 1.444;
   text-align: center;
+
+  @media (min-width: $bp-tablet) {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding: 0 60px;
+    font-size: 21px;
+    line-height: 1.238;
+    background-color: $bg-white;
+  }
 }
 
 .emotions__field {
+  box-sizing: border-box;
   width: 100%;
-  padding: 0;
+  min-height: 160px;
+  padding: 20px;
+  padding-top: 15px;
+  resize: none;
+
+  font-size: 18px;
+  line-height: 1.444;
+  font-weight: bold;
+  color: $font-black;
+  text-transform: none;
+
   border: 0;
-  background: gray;
+  background: $bg-form-gray;
+
+  &::placeholder {
+    color: $font-black;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
 }
