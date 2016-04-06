@@ -121,11 +121,11 @@
       <a class="btn btn--blue  btn--start-search" href="#">Найти гостиницу</a>
     </div>
 
-    <div class="map">
-      <picture>
+    <div class="map"  id="map-canvas">
+     <!-- <picture>
         <source media="(min-width: 1200px)" srcset="img/bg-map-desktop.jpg">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet.jpg">
-        <img src="img/bg-map-mobile.jpg" width="320" height="350" alt="Карта">                    </picture>
+        <img src="img/bg-map-mobile.jpg" width="320" height="350" alt="Карта">                    </picture> -->
     </div>
 
 
@@ -184,6 +184,8 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeCEe3-6uQ70WgCInaCv-9lXSiooZoUoA&amp;callback=initialize" async="" defer=""></script>
   </body>
 </html>
 
