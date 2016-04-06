@@ -1,11 +1,8 @@
 .impression {
   position: relative;
   margin: 0;
-  //margin-bottom: 25px;
   padding: 0;
   width: 100%;
-
-  //outline: 1px solid green;
 
   &:before {
     content: "";
@@ -63,8 +60,6 @@
   margin-top: 5px;
   margin-bottom: 40px;
 
-  //outline: 1px solid red;
-
   @media (min-width: $bp-tablet) {
     margin-bottom: 48px;
   }
@@ -114,6 +109,4 @@
   font-weight: bold;
   color: $font-black;
   text-transform: none;
-
-  //outline: 1px solid blue;
 }

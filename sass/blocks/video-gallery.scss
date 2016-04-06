@@ -1,5 +1,4 @@
 .video-gallery {
-  //outline: 1px solid blue;
   margin-bottom: 38px;
 
   @media (min-width: $bp-tablet) {
@@ -14,7 +13,7 @@
 
 .video-gallery__text-wrap {
   @include clearfix;
-  padding-top: 28px;
+  padding-top: 32px;
   padding-bottom: 23px;
   text-align: center;
 

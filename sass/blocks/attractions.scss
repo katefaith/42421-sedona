@@ -6,8 +6,6 @@
   width: 100%;
   text-align: center;
 
-  //outline: 1px solid red;
-
   &:before {
     content: "";
     position: absolute;
@@ -142,8 +140,6 @@
 
   width: 24px;
   height: 17px;
-  //border-radius: 50%;
-  //background-color: $font-gray;
   background: url("../img/icon-tick.svg") center no-repeat;
 }
 
@@ -153,6 +149,4 @@
   font-weight: bold;
   color: $font-black;
   text-transform: none;
-
-  //outline: 1px solid blue;
 }

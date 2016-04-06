@@ -1,3 +1,6 @@
+// Маркер работающего JS
+document.documentElement.classList.add('js');
+
 // Мобильное меню
 // Получаем элементы
 var nav = document.querySelector('.main-nav__list');
@@ -5,6 +8,7 @@ var buttClose = document.querySelector('.main-nav__toggle');
 
 // Класс, обозначающий закрытое меню
 var statusClose = 'main-nav__list--closed';
+nav.classList.toggle(statusClose);
 
 // Событие по нажатию на кнопку
 buttClose.onclick = function () {
@@ -27,7 +31,6 @@ buttClose.onclick = function () {
     map: map,
   });
 }*/
-//google.maps.event.addDomListener(window, 'load', initialize);
 
 
 function initialize() {
@@ -45,4 +48,9 @@ function initialize() {
     map: map,
     position: myLatLng
   });
+
+  google.maps.event.addDomListener(window, 'resize', function() {
+      map.setCenter(myLatLng);
+    });
 }
+

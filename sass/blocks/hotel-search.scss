@@ -3,11 +3,9 @@
   padding: 0 20px;
   padding-top: 25px;
   padding-bottom: 46px;
-  //height: 285px;
   text-align: center;
 
   @media (min-width: $bp-tablet) {
-    //height: 320px;
     padding: 0 155px;
     padding-top: 55px;
     padding-bottom: 60px;
@@ -18,8 +16,6 @@
     padding-right: 370px;
     padding-bottom: 65px;
   }
-
-  //outline: 1px solid black;
 }
 
 .hotel-search__title {

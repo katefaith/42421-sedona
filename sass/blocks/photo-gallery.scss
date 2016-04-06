@@ -1,8 +1,6 @@
 .photo-gallery {
   padding: 0 20px;
 
-  //outline: 1px solid green;
-
   @media (min-width: $bp-tablet) {
     padding: 0 60px;
   }
@@ -18,7 +16,6 @@
   padding-bottom: 15px;
 
   text-align: center;
-  //outline: 1px solid brown;
 
   &:after {
     content: "";
@@ -75,6 +72,4 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
-
 }

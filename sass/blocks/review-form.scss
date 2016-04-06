@@ -5,7 +5,6 @@
   align-items: center;
   padding: 0 20px;
   margin-bottom: 35px;
-  //outline: 1px solid purple;
 
   @media (min-width: $bp-tablet) {
     padding: 0 60px;
@@ -23,15 +22,6 @@
   padding-top: 25px;
   padding-bottom: 20px;
   text-align: center;
-
-  /*&:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    width: 320px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }*/
 
   @media (min-width: $bp-tablet) {
     order: 1;
@@ -76,6 +66,5 @@
     display: inline;
     order: 8;
     margin-left: auto;
-
   }
 }

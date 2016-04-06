@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 15px;
 
   &:first-of-type {
     @media (min-width: $bp-tablet) {
@@ -50,7 +50,6 @@
 }
 
 .item-photo img {
-//.item-photo__pict .picture {
   display: block;
   width: 280;
   height: 280px;
@@ -66,7 +65,6 @@
 }
 
 .item-photo--big img {
-//.item-photo__pict .picture--big {
 
   @media (min-width: $bp-tablet) {
     width: 648px;
@@ -82,8 +80,6 @@
   display: flex;
   flex-direction: column;
 
-  //outline: 1px solid blue;
-
   @media (min-width: $bp-tablet) {
     flex-direction: row;
     justify-content: space-around;
@@ -95,7 +91,6 @@
   }
 
   @media (min-width: $bp-desktop) {
-    //vyu
     margin-top: -80px;
     color: $font-white;
     background-color: rgba(0, 0, 0, 0.3);
@@ -110,8 +105,6 @@
 
 .item-photo__descr {
   width: 100%;
-
-  //outline: 1px solid green;
 
   @media (min-width: $bp-tablet) {
     width: 70%;
@@ -137,8 +130,6 @@
   padding-top: 5px;
   font-weight: bold;
   line-height: 1.714;
-
-  //outline: 1px solid red;
 
   @media (min-width: $bp-tablet) {
     padding-top: 0;

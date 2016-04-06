@@ -12,7 +12,6 @@
   text-decoration: none;
 
   background-color: $bg-blue;
-  //outline: 1px solid red;
 
   &:hover {
     background-color: $bg-blue-hvr;
@@ -29,11 +28,9 @@
   width: 16px;
   height: 20px;
 
-  //background: url("/img/icon-video-replay.svg") no-repeat;
   background-color: transparent;
 
   @media (min-width: $bp-tablet) {
-    //margin-right: 40px;
     margin-left: 30px;
     order: -1;
   }
@@ -50,7 +47,6 @@
   height: 20px;
   margin-left: auto;
 
-  //background: url("/img/icon-video-subtitles.svg") no-repeat;
   background-color: transparent;
 
   @media (min-width: $bp-tablet) {
@@ -70,7 +66,6 @@
   margin-right: 28px;
   margin-left: 32px;
 
-  //background: url("/img/icon-video-fullscreen.svg") no-repeat;
   background-color: transparent;
 
   @media (min-width: $bp-tablet) {
@@ -110,7 +105,6 @@
 }
 
 .btn--success {
-  //margin: 0 auto;
   padding: 15px;
   width: 100%;
 }
@@ -123,6 +117,4 @@
 
 .btn--start-search {
   display: block;
-  //padding: 17px;
-  //margin-bottom: 50px;
 }

@@ -1,7 +1,5 @@
 .social-links {
   display: flex;
-  //outline: 1px solid black;
-
 }
 
 .social-links__item {
@@ -15,11 +13,6 @@
 
   font-size: 0;
   background-color: $bg-blue;
-
-  /*vertical-align: top;
-
-  background-repeat: no-repeat;
-  background-position: center;*/
 
   &:last-child {
     margin-right: 0;

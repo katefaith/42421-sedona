@@ -107,6 +107,7 @@
 }
 
 .main-nav__toggle {
+  display: none;
   position: absolute;
   top: 17px;
   right: 20px;
@@ -117,27 +118,27 @@
   background: none;
   border: none;
 
-  @media (min-width: $bp-tablet) {
-    display: none;
+  @media (max-width: $bp-tablet) {
+    .js & {
+      display: block;
+    }
   }
 }
 
 .main-nav__toggle--closed {
   &:before {
-    //content: '\2715';
     content: "";
     display: block;
     width: 23px;
     height: 22px;
-    background: url("/img/icon-cross.svg") no-repeat;
+    background: url("../img/icon-cross.svg") no-repeat;
     background-size: 23px 22px;
 
   }
   // Меняем иконку
   .main-nav__list--closed + &:before {
-    //content: '\2261';
     content: "";
-    background: url("/img/icon-menu.svg") no-repeat;
+    background: url("../img/icon-menu.svg") no-repeat;
     background-size: 23px 22px;
   }
 

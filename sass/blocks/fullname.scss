@@ -1,12 +1,8 @@
 .fullname {
-  //@include clearfix;
   position: relative;
   margin: 0;
   padding: 0;
-  //margin-bottom: 5px;
   width: 100%;
-
-  //outline: 1px solid red;
 
   &:before {
     content: "";
@@ -20,7 +16,6 @@
   @media (min-width: $bp-tablet) {
     order: 3;
     width: 50%;
-    //margin-bottom: 20px;
     min-height: 368px;
 
     &:before {
@@ -41,8 +36,6 @@
   font-weight: bold;
   line-height: 1.444;
   text-align: center;
-
-  //outline: 1px solid green;
 
   @media (min-width: $bp-tablet) {
     margin-top: 0;
@@ -93,7 +86,6 @@
 }
 
 .fullname__field {
-  //flex-grow: 1;
   width: 100%;
   padding: 14px;
   font-size: 18px;
