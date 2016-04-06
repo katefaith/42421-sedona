@@ -13,19 +13,36 @@ buttClose.onclick = function () {
 
 
 // Карта
-function initialize() {
+/*function initialize() {
   var mapOptions = {
     zoom: 7,
-    center: new google.maps.LatLng(34.7682482,-111.713764)
+    center: new google.maps.LatLng(34.86973,-111.76098)
   }
-  var map = new google.maps.Map(document.getElementById('map-canvas'),
-                                mapOptions);
-  //var image = "http://i.neoseeker.com/mgv/499846/846/33/15847_179440563793_179437393793_2772323_4548598_n_icon.jpg";
-  var myLatLng = new google.maps.LatLng(34.7682482,-111.713764);
+  //var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                //mapOptions);
+  var map = document.querySelector(".map");
+  var myLatLng = new google.maps.LatLng(34.86973,-111.76098);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    //icon: image
+  });
+}*/
+//google.maps.event.addDomListener(window, 'load', initialize);
+
+
+function initialize() {
+  var myLatLng = {lat: 34.86973, lng: -111.76098};
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.querySelector(".map"), {
+    center: myLatLng,
+    //scrollwheel: false,
+    zoom: 7
+  });
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng
   });
 }
-google.maps.event.addDomListener(window, 'load', initialize);

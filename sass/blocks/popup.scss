@@ -5,8 +5,9 @@
   bottom: 300px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100000000000000000;
+  z-index: 3;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: $bg-white;
 }
 
 .popup--show {

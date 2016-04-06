@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   //outline: 1px solid purple;
 
   @media (min-width: $bp-tablet) {
@@ -14,6 +14,7 @@
 
   @media (min-width: $bp-desktop) {
     padding: 0 120px;
+    margin-bottom: 62px;
   }
 }
 
