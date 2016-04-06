@@ -16,23 +16,8 @@ buttClose.onclick = function () {
 }
 
 
+
 // Карта
-/*function initialize() {
-  var mapOptions = {
-    zoom: 7,
-    center: new google.maps.LatLng(34.86973,-111.76098)
-  }
-  //var map = new google.maps.Map(document.getElementById('map-canvas'),
-                                //mapOptions);
-  var map = document.querySelector(".map");
-  var myLatLng = new google.maps.LatLng(34.86973,-111.76098);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-  });
-}*/
-
-
 function initialize() {
   var myLatLng = {lat: 34.86973, lng: -111.76098};
 
