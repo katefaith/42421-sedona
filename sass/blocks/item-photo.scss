@@ -143,15 +143,19 @@
   width: 20px;
   height: 22px;
   fill: #b2b2b2;
-}
-
-.item-photo__like svg path {
-  fill: #b2b2b2;
 
   @media (min-width: $bp-desktop) {
     fill: $font-white;
   }
 }
+
+/*.item-photo__likve svg path {
+  fill: #b2b2b2;
+
+  @media (min-width: $bp-desktop) {
+    fill: $font-white;
+  }
+}*/
 
 .item-photo__like span {
   padding-left: 12px;
