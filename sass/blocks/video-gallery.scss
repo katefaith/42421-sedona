@@ -1,5 +1,6 @@
 .video-gallery {
-  outline: 1px solid blue;
+  //outline: 1px solid blue;
+  margin-bottom: 38px;
 
   @media (min-width: $bp-tablet) {
     padding: 0 60px;
@@ -7,5 +8,50 @@
 
   @media (min-width: $bp-desktop) {
     padding: 0 200px;
+    margin-bottom: 85px;
+  }
+}
+
+.video-gallery__text-wrap {
+  @include clearfix;
+  padding-top: 28px;
+  padding-bottom: 23px;
+  text-align: center;
+
+  @media (min-width: $bp-tablet) {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 70px;
+    padding-bottom: 55px;
+  }
+}
+
+.video-gallery__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.444;
+  font-weight: bold;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 0.866;
+  }
+}
+
+.video-gallery__text {
+  line-height: 1.714;
+  padding: 0 30px;
+
+  @media (min-width: $bp-tablet) {
+    padding: 0 110px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding: 0 180px;
   }
 }

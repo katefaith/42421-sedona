@@ -1,14 +1,129 @@
 .item-feature {
-  outline: 1px solid green;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 20px;
+  padding-bottom: 28px;
+
+  &:before {
+    content: "";
+    position: absolute;
+
+    background-repeat: no-repeat;
+    transform: translateY(-20%);
+  }
 
   @media (min-width: $bp-tablet) {
-    float: left;
-    height: 256px;
     width: 256px;
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 62px;
+
+    &:before {
+      transform: translateY(0);
+      left: 50%;
+      top: 20%;
+      transform: translateX(-50%);
+
+    }
   }
 
   @media (min-width: $bp-desktop) {
-    height: 330px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 85px;
     width: 400px;
   }
+
+
+
+}
+
+.item-feature--housing {
+  &:before {
+    @media (min-width: $bp-tablet) {
+      order: 1;
+    }
+
+    width: 39px;
+    height: 37px;
+    background-image: url("../img/icon-house.svg");
+    background-size: 39px auto;
+
+    @media (min-width: $bp-tablet) {
+      width: 75px;
+      height: 73px;
+      background-size: 75px auto;
+    }
+  }
+}
+
+.item-feature--souvenirs {
+  @media (min-width: $bp-tablet) {
+      order: 3;
+  }
+
+  &:before {
+    width: 32px;
+    height: 41px;
+    background-image: url("../img/icon-gift.svg");
+    background-size: 32px auto;
+
+    @media (min-width: $bp-tablet) {
+      width: 64px;
+      height: 76px;
+      background-size: 64px auto;
+    }
+  }
+}
+
+.item-feature--food {
+  @media (min-width: $bp-tablet) {
+      order: 2;
+  }
+
+  &:before {
+    width: 40px;
+    height: 37px;
+    background-image: url("../img/icon-burger.svg");
+    background-size: 40px auto;
+
+    @media (min-width: $bp-tablet) {
+      width: 77px;
+      height: 69px;
+      background-size: 77px auto;
+    }
+  }
+}
+
+.item-feature__wrapper {
+  padding-left: 50px;
+
+  @media (min-width: $bp-tablet) {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.item-feature__title {
+  margin: 0;
+  padding-bottom: 15px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.444;
+
+  @media (min-width: $bp-tablet){
+    font-size: 21px;
+    line-height: 1.238;
+    padding-bottom: 20px;
+  }
+}
+
+.item-feature__descr {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
 }

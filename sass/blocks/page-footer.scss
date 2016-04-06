@@ -1,7 +1,5 @@
-.page-footer {
+/*.page-footer {
   @include clearfix;
-
-
   outline: 1px solid black;
 
   @media (min-width: $bp-tablet) {
@@ -66,4 +64,91 @@
     text-align: right;
 
   }
+}*/
+
+// ====================================
+
+
+.page-footer {
+  //@include clearfix;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37px;
+  padding-bottom: 20px;
+
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
+.page-footer__out-link {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.238;
+  margin-bottom: 37px;
+
+  a {
+    text-decoration: none;
+    color: $font-black;
+  }
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-left: 130px;
+  }
+}
+
+.page-footer__social {
+  display: flex;
+  margin-bottom: 35px;
+
+  @media (min-width: $bp-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-right: 95px;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $bp-tablet) {
+
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-right: 45px;
+  }
+}
+
+.page-footer__copyright a {
+  padding-top: 5px;
+  &:hover {
+    fill: $bg-blue;
+  }
+}
+
+.page-footer__copyright svg {
+  width: 27px;
+  height: 34px;
+  margin-left: 14px;
+}
+
+
+

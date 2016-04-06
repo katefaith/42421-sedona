@@ -3,15 +3,26 @@ $font: "PT Sans", "Tahoma", sans-serif;
 $font-bold: "PT Sans Bold", "Tahoma", sans-serif;
 
 // colors
-$font-color-white: #ffffff;
-$font-color-dark: #222222;
-$font-color-blue: #9ac2db;
-$blue: #81b3d2;
-$blue-hvr: #669ec0;
-$blue-down: #5496bd;
-$white: #ffffff;
+$font-white: #ffffff;
+$font-black: #000000;
+$font-blue: #81b3d2;
+$font-white-down: #88b6d1;
+$font-gray-down: #b7b7b7;
+$font-brown: #766357;
+$font-brown-hvr: #604e43;
+$font-brown-down: #d6d0cc;
+$font-gray: #333333;
 
+$bg-blue: #81b3d2;
+$bg-blue-hvr: #669ec0;
+$bg-blue-down: #5496bd;
+$bg-white: #ffffff;
+$bg-gray: #eeeeee;
+$bg-gray-disabled: #e5e5e5;
 
+$bg-form-gray: #f2f2f2;
+$bg-form-gray-hvr: #e5e5e5;
+$bg-form-gray-down: #d5d5d5;
 
 // breakpoints
 $bp-mobile: 320px;

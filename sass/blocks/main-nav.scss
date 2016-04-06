@@ -1,11 +1,9 @@
 .main-nav {
   position: relative;
-  background: $blue;
-
-  //outline: 1px solid purple;
+  background: $bg-blue;
 
   @media (min-width: $bp-tablet) {
-    background: $white;
+    background: $bg-white;
   }
 }
 
@@ -18,23 +16,34 @@
 
   @media (min-width: $bp-tablet) {
     box-shadow: none;
+
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .main-nav__list--closed {
-
-  @media (max-width: $bp-tablet) {
+  @media (max-width: ($bp-tablet - 1)) {
     display: none;
   }
 }
 
 .main-nav__item {
   @media (min-width: $bp-tablet) {
-    display: inline-block;
-    vertical-align: top;
+    flex-basis: 25%;
 
     &:nth-child(n+3) {
       float: right;
+    }
+
+    &:nth-child(2) {
+      margin-right: 150px;
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    &:nth-child(2) {
+      margin-right: 245px;
     }
   }
 }
@@ -42,12 +51,12 @@
 .main-nav__item a {
   display: block;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 
   font-weight: bold;
   font-size: 18px;
   line-height: 2.22;
-  color: $font-color-white;
+  color: $font-white;
   text-decoration: none;
   text-align: center;
 
@@ -55,36 +64,58 @@
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
   &:hover {
-    background-color: $blue-hvr;
+    background-color: $bg-blue-hvr;
+  }
+
+  &:active {
+    color: $font-white-down;
+    background-color: $bg-blue-down;
   }
 
   @media (min-width: $bp-tablet) {
-    padding: 10px 20px;
+    padding: 15px 0;
+
+
     font-size: 14px;
     line-height: 26px;
-    color: $font-color-dark;
+    color: $font-black;
     border: none;
 
     &:hover {
-      background-color: $white;
-      color: $font-color-blue;
+      background-color: $bg-white;
+      color: $font-blue;
+    }
+
+    &:active {
+        color: $font-gray-down;
     }
   }
+}
 
+.main-nav__item--active a {
+  @media (min-width: $bp-tablet) {
+    color: $font-brown;
 
+    &:hover {
+      color: $font-brown-hvr;
+    }
+
+    &:active {
+      color: $font-brown-down;
+    }
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 17px;
   right: 20px;
-  width: 22px;
+  width: 23px;
   height: 22px;
+  padding: 0;
 
   background: none;
   border: none;
-
-  //outline: 1px solid blue;
 
   @media (min-width: $bp-tablet) {
     display: none;
@@ -93,11 +124,21 @@
 
 .main-nav__toggle--closed {
   &:before {
-    content: '\2715';
+    //content: '\2715';
+    content: "";
+    display: block;
+    width: 23px;
+    height: 22px;
+    background: url("/img/icon-cross.svg") no-repeat;
+    background-size: 23px 22px;
+
   }
   // Меняем иконку
   .main-nav__list--closed + &:before {
-    content: '\2261';
+    //content: '\2261';
+    content: "";
+    background: url("/img/icon-menu.svg") no-repeat;
+    background-size: 23px 22px;
   }
 
 }

@@ -1,4 +1,43 @@
 .social-links {
-  outline: 1px solid black;
+  display: flex;
+  //outline: 1px solid black;
 
+}
+
+.social-links__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 7px;
+  width: 48px;
+  height: 48px;
+
+  font-size: 0;
+  background-color: $bg-blue;
+
+  /*vertical-align: top;
+
+  background-repeat: no-repeat;
+  background-position: center;*/
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $bg-blue-hvr;
+  }
+
+  &:active {
+    background-color: $bg-blue-down;
+  }
+}
+
+.social-links__icon {
+  fill: $bg-white;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -1,24 +1,63 @@
 .attractions {
+  position: relative;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   width: 100%;
+  text-align: center;
 
-  outline: 1px solid red;
+  //outline: 1px solid red;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 320px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $bp-tablet) {
     order: 5;
+    margin-bottom: 40px;
+
+    &:before {
+      z-index: 1;
+      left: 0;
+      top: 30px;
+      width: 100%;
+    }
   }
 }
 
 .attractions__heading {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 35px;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 1.444;
   text-align: center;
+
+  @media (min-width: $bp-tablet) {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    margin-bottom: 55px;
+    padding: 0 60px;
+    font-size: 21px;
+    line-height: 1.238;
+    background-color: $bg-white;
+  }
 }
 
 .attractions__list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 
   list-style: none;
 
@@ -34,12 +73,86 @@
 
 .attractions__item {
   width: 100%;
+  margin-bottom: 55px;
+
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
 
   @media (min-width: $bp-tablet) {
     width: 260px;
+    margin-bottom: 65px;
+
+    &:nth-child(1) {
+      order: -4;
+    }
+
+    &:nth-child(3) {
+      order: -3;
+    }
+
+    &:nth-child(2) {
+      order: -2;
+      margin-bottom: 45px;
+    }
+
+    &:nth-child(4) {
+      order: -1;
+      margin-bottom: 45px;
+    }
+
   }
 
   @media (min-width: $bp-desktop) {
     width: auto;
+    margin-bottom: 25px;
   }
+}
+
+.attractions__checkbox {
+  display: none;
+}
+
+.attractions__checkbox + .attractions__label {
+  position: relative;
+  display: inline-block;
+  padding-left: 80px;
+  vertical-align: top;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: -15px;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: $bg-form-gray;
+  }
+}
+
+.attractions__checkbox:checked + .attractions__label:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 3px;
+
+  width: 24px;
+  height: 17px;
+  //border-radius: 50%;
+  //background-color: $font-gray;
+  background: url("../img/icon-tick.svg") center no-repeat;
+}
+
+.attractions__label {
+  font-size: 18px;
+  line-height: 1.444;
+  font-weight: bold;
+  color: $font-black;
+  text-transform: none;
+
+  //outline: 1px solid blue;
 }
