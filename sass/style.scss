@@ -32,52 +32,21 @@
 @import "blocks/emotions.scss";
 
 body {
-  @include container;
+  //@include container;
   font-family: $font;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
 
-  @media (min-width: $bp-desktop) {
-    background-color: $bg-form-gray;
-  }
-
-  /*&:after {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    min-height: 4000px;
-    pointer-events: none;
-
-    background-image: url("../img/makets/sedona-form-mobile.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-
-    opacity: .2;
-    mix-blend-mode: difference;
-
-    @media (min-width: $bp-tablet) {
-      background: url("../img/makets/sedona-form-tablet.png") center top no-repeat;
-    }
-
-    @media (min-width: $bp-desktop) {
-      background: url("../img/makets/sedona-form-desktop.png") center top no-repeat;
-    }
-  }*/
-
+  background-color: $bg-form-gray;
 }
 
 .page-wrapper {
-  @media (min-width: $bp-desktop) {
-    background-color: $bg-white;
-    box-shadow: 0px 5px 15px 0px rgba(1, 1, 1, 0.2);
-  }
+  @include container;
+
+  background-color: $bg-white;
+  box-shadow: 0px 5px 15px 0px rgba(1, 1, 1, 0.2);
 }
 
 fieldset {
