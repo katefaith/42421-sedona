@@ -56,7 +56,7 @@ gulp.task("symbols", function() {
 
 
 gulp.task("copies", function() {
-  return gulp.src(["fonts/**/*.{woff,woff2}", "img/**/*.{jpg,svg}", "js/**/*.js", "*.html"])
+  return gulp.src(["fonts/**/*.{woff,woff2}", "img/**/*.{jpg}", "js/**/*.js", "*.html"])
   .pipe(copy("build/"));
 });
 
