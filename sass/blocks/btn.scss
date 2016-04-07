@@ -21,15 +21,15 @@
     color: $font-white-down;
     background-color: $bg-blue-down;
   }
-  
-  &[disabled] {
-    background-color: $bg-gray-disabled;
-  }
+}
+
+.btn--blue[disabled],
+.btn--blue-disabled {
+  background-color: $bg-gray-disabled;
 }
 
 .btn--repeat {
   padding: 0;
-  //height: 20px;
   margin-left: 17px;
   width: 32px;
   height: 20px;

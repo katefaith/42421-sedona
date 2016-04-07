@@ -153,9 +153,9 @@
   background-repeat: no-repeat;
 }
 
-/*.attractions__checkbox:checked + .attractions__label:active:after {
-  background-color: #a4a4a4;
-}*/
+.attractions__checkbox:checked + .attractions__label:active:after {
+  opacity: 0.3;
+}
 
 .attractions__label {
   font-size: 18px;
