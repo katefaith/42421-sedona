@@ -12,6 +12,7 @@ var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var copy = require("gulp-copy");
+const del = require('del');
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -57,13 +58,24 @@ gulp.task("symbols", function() {
 });
 
 
-gulp.task("copies", function() {
+gulp.task("copies:build", function() {
   return gulp.src(["fonts/**/*.{woff,woff2}", "img/**/*.{jpg,svg}", "js/**/*.js", "*.html"])
   .pipe(copy("build/"));
 });
 
+gulp.task("copies:html", function() {
+  return gulp.src(["*.html"])
+  .pipe(copy("build/"));
+});
 
-gulp.task("build", ["copies", "style", "images", "symbols"]);
+gulp.task("delete", function() {
+  del("build/").then(paths => {
+	console.log('Deleted files and folders:\n', paths.join('\n'));
+  });
+});
+
+
+gulp.task("build", ["delete", "copies", "style", "images", "symbols"]);
 
 
 gulp.task("serve", ["style"], function() {
