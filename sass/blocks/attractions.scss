@@ -130,6 +130,14 @@
     border-radius: 5px;
     background-color: $bg-form-gray;
   }
+  
+  &:hover:before {
+    background-color: #e5e5e5;
+  }
+  
+  &:active:before {
+    background-color: #d5d5d5;
+  }
 }
 
 .attractions__checkbox:checked + .attractions__label:after {
@@ -140,8 +148,14 @@
 
   width: 24px;
   height: 17px;
-  background: url("../img/icon-tick.svg") center no-repeat;
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+/*.attractions__checkbox:checked + .attractions__label:active:after {
+  background-color: #a4a4a4;
+}*/
 
 .attractions__label {
   font-size: 18px;

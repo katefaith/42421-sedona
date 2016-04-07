@@ -102,5 +102,5 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["copies:html"]).on("change", server.reload({stream: true}));
+  gulp.watch("*.html", ["copies:html"]);
 });
