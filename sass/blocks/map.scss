@@ -1,14 +1,15 @@
 .map {
   height: 350px;
-  background: url("../img/bg-map-mobile.jpg");
+  background-image: url("../img/bg-map-mobile.jpg");
+  background-color: #f4f3f0;
 
   @media (min-width: $bp-tablet) {
     width: 100%;
-    background: url("../img/bg-map-tablet.jpg");
+    background-image: url("../img/bg-map-tablet.jpg");
   }
 
   @media (min-width: $bp-desktop) {
     width: 100%;
-    background: url("../img/bg-map-desktop.jpg");
+    background-image: url("../img/bg-map-desktop.jpg");
   }
 }

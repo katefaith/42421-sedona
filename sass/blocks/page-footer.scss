@@ -71,6 +71,10 @@
   &:hover {
     fill: $bg-blue;
   }
+  
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
 .page-footer__copyright svg {
