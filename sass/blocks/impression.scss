@@ -89,6 +89,14 @@
     border-radius: 50%;
     background-color: $bg-form-gray;
   }
+  
+  &:hover:before {
+    background-color: #e5e5e5;
+  }
+  
+  &:active:before {
+    background-color: #d5d5d5;
+  }
 }
 
 .impression__radio:checked + .impression__label:after {
@@ -101,6 +109,10 @@
   height: 20px;
   border-radius: 50%;
   background-color: $font-gray;
+}
+
+.impression__radio:checked + .impression__label:active:after {
+  background-color: #a4a4a4;
 }
 
 .impression__label {

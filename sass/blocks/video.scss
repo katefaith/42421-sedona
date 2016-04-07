@@ -54,7 +54,11 @@
   background: rgba(255, 255, 255, 0.2);
 
   @media (min-width: $bp-tablet) {
-    margin: 10px 43px;
+    margin: 10px 32px;
+  }
+  
+  @media (min-width: $bp-desktop) {
+    margin: 10px 40px;
   }
 }
 
