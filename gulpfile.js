@@ -58,7 +58,7 @@ gulp.task("symbols", function() {
 });
 
 
-gulp.task("copies:build", function() {
+gulp.task("copies:build", ["delete"], function() {
   return gulp.src(["fonts/**/*.{woff,woff2}", "img/**/*.{jpg,svg}", "js/**/*.js", "*.html"])
   .pipe(copy("build/"));
 });
@@ -75,7 +75,7 @@ gulp.task("delete", function() {
 });
 
 
-gulp.task("build", ["delete", "copies", "style", "images", "symbols"]);
+gulp.task("build", ["copies:build", "style", "images", "symbols"]);
 
 
 gulp.task("serve", ["style"], function() {

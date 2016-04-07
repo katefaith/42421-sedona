@@ -96,7 +96,7 @@
 .contacts__wrapper--tel {
   &:before {
     bottom: 45px;
-    background: $bg-form-gray-hvr url("/img/icon-phone.svg") center no-repeat;
+    background: $bg-form-gray-hvr url("../img/icon-phone.svg") center no-repeat;
   }
 
   @media (min-width: $bp-tablet) {
@@ -113,7 +113,7 @@
 
 .contacts__wrapper--email {
   &:before {
-    background: $bg-form-gray-hvr url("/img/icon-mail.svg") center no-repeat;
+    background: $bg-form-gray-hvr url("../img/icon-mail.svg") center no-repeat;
   }
 
   @media (min-width: $bp-desktop) {
